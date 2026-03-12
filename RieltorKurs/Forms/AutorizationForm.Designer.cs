@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutorizationForm));
             this.buttonEnter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.buttonRieltor = new System.Windows.Forms.Button();
+            this.buttonAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonEnter
@@ -88,6 +91,26 @@
             this.textBoxPassword.Size = new System.Drawing.Size(231, 29);
             this.textBoxPassword.TabIndex = 2;
             // 
+            // buttonRieltor
+            // 
+            this.buttonRieltor.Location = new System.Drawing.Point(475, 152);
+            this.buttonRieltor.Name = "buttonRieltor";
+            this.buttonRieltor.Size = new System.Drawing.Size(51, 53);
+            this.buttonRieltor.TabIndex = 0;
+            this.buttonRieltor.Text = "R";
+            this.buttonRieltor.UseVisualStyleBackColor = true;
+            this.buttonRieltor.Click += new System.EventHandler(this.buttonRieltor_Click);
+            // 
+            // buttonAdmin
+            // 
+            this.buttonAdmin.Location = new System.Drawing.Point(475, 229);
+            this.buttonAdmin.Name = "buttonAdmin";
+            this.buttonAdmin.Size = new System.Drawing.Size(51, 56);
+            this.buttonAdmin.TabIndex = 0;
+            this.buttonAdmin.Text = "A";
+            this.buttonAdmin.UseVisualStyleBackColor = true;
+            this.buttonAdmin.Click += new System.EventHandler(this.buttonAdmin_Click);
+            // 
             // AutorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -98,12 +121,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonAdmin);
+            this.Controls.Add(this.buttonRieltor);
             this.Controls.Add(this.buttonEnter);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AutorizationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.AutorizationForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,6 +144,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Button buttonRieltor;
+        private System.Windows.Forms.Button buttonAdmin;
     }
 }
 

@@ -15,7 +15,6 @@ namespace RieltorKurs.Model
             Deal1 = new HashSet<Deal>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [StringLength(40)]

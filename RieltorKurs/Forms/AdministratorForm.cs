@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace RieltorKurs.Forms
 {
-    public partial class AdministratorForm : Form
+    public partial class AdministratorForm : ParentFrom
     {
         public AdministratorForm()
         {
             InitializeComponent();
+        }
+
+        private void AdministratorForm_Load(object sender, EventArgs e)
+        {
+            LoadDataUser();
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Close();
+            Application.OpenForms[0].Visible = true;
         }
     }
 }

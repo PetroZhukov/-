@@ -5,10 +5,10 @@ using System.Linq;
 
 namespace RieltorKurs.Model
 {
-    public partial class ModelEF : DbContext
+    public partial class Model1 : DbContext
     {
-        public ModelEF()
-            : base("name=ModelEF")
+        public Model1()
+            : base("name=Model11")
         {
         }
 

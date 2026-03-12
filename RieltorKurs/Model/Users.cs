@@ -14,14 +14,13 @@ namespace RieltorKurs.Model
             Deal = new HashSet<Deal>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [StringLength(40)]
         public string FirstName { get; set; }
 
         [StringLength(40)]
-        public string StudentName { get; set; }
+        public string SecondName { get; set; }
 
         [StringLength(40)]
         public string ThirdName { get; set; }

@@ -15,7 +15,6 @@ namespace RieltorKurs.Model
             Realest_Placement = new HashSet<Realest_Placement>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [StringLength(200)]
