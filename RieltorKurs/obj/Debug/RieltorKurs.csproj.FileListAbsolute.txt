@@ -21,3 +21,4 @@ C:\Users\323\Documents\Пётр Жуков курсовая\RieltorKurs\obj\Debu
 C:\Users\323\Documents\Пётр Жуков курсовая\RieltorKurs\obj\Debug\RieltorKurs.Forms.ShowClientForm.resources
 C:\Users\323\Documents\Пётр Жуков курсовая\RieltorKurs\obj\Debug\RieltorKurs.Forms.ShowDealForm.resources
 C:\Users\323\Documents\Пётр Жуков курсовая\RieltorKurs\obj\Debug\RieltorKurs.Forms.ShowPlacementForm.resources
+C:\Users\323\Documents\Пётр Жуков курсовая\RieltorKurs\obj\Debug\RieltorKurs.Forms.AddUpdateDealForm.resources

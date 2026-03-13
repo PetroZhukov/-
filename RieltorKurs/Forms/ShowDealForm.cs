@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RieltorKurs.Model;
 
 namespace RieltorKurs.Forms
 {
@@ -16,7 +17,7 @@ namespace RieltorKurs.Forms
         {
             InitializeComponent();
         }
-
+        private Model1 model = new Model1();
         private void buttonBack_Click(object sender, EventArgs e)
         {
             RieltorForm rieltorForm = new RieltorForm();
@@ -27,6 +28,14 @@ namespace RieltorKurs.Forms
         private void ShowDealForm_Load(object sender, EventArgs e)
         {
             LoadDataUser();
+            dealBindingSource.DataSource = model.Deal.ToList();
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            AddUpdateDealForm form = new AddUpdateDealForm(model);
+            form.ShowDialog();
+            dealBindingSource.DataSource = model.Deal.ToList();
         }
     }
 }

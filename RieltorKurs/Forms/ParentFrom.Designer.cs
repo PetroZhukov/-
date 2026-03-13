@@ -41,9 +41,9 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.panel1.Location = new System.Drawing.Point(0, 126);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(940, 11);
             this.panel1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // buttonBack
             // 
             this.buttonBack.Location = new System.Drawing.Point(14, 14);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(5);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(121, 46);
             this.buttonBack.TabIndex = 1;
@@ -60,6 +60,8 @@
             // 
             // labelNameForm
             // 
+            this.labelNameForm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelNameForm.Location = new System.Drawing.Point(199, 15);
             this.labelNameForm.Name = "labelNameForm";
             this.labelNameForm.Size = new System.Drawing.Size(544, 45);
@@ -103,7 +105,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ParentFrom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParentFrom";
