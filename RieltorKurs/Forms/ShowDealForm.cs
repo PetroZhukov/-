@@ -37,5 +37,13 @@ namespace RieltorKurs.Forms
             form.ShowDialog();
             dealBindingSource.DataSource = model.Deal.ToList();
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            AddUpdateDealForm form = new AddUpdateDealForm(model, (Deal) dealBindingSource.Current);
+            form.ShowDialog();
+            dealBindingSource.DataSource = model.Deal.ToList();
+
+        }
     }
 }

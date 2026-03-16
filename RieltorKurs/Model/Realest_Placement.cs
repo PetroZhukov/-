@@ -8,7 +8,6 @@ namespace RieltorKurs.Model
 
     public partial class Realest_Placement
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         public int? Deal_ID { get; set; }
