@@ -44,6 +44,7 @@
             // 
             // buttonClients
             // 
+            this.buttonClients.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonClients.Location = new System.Drawing.Point(142, 267);
             this.buttonClients.Name = "buttonClients";
             this.buttonClients.Size = new System.Drawing.Size(169, 94);
@@ -54,6 +55,7 @@
             // 
             // buttonPlacement
             // 
+            this.buttonPlacement.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonPlacement.Location = new System.Drawing.Point(652, 267);
             this.buttonPlacement.Name = "buttonPlacement";
             this.buttonPlacement.Size = new System.Drawing.Size(169, 94);
@@ -64,6 +66,7 @@
             // 
             // buttonDeal
             // 
+            this.buttonDeal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonDeal.Location = new System.Drawing.Point(395, 267);
             this.buttonDeal.Name = "buttonDeal";
             this.buttonDeal.Size = new System.Drawing.Size(169, 94);

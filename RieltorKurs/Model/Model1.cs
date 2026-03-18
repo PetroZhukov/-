@@ -34,10 +34,10 @@ namespace RieltorKurs.Model
                 .WithOptional(e => e.Clients1)
                 .HasForeignKey(e => e.Ourien_ID);
 
-            modelBuilder.Entity<Deal>()
-                .HasMany(e => e.Realest_Placement)
-                .WithOptional(e => e.Deal)
-                .HasForeignKey(e => e.Deal_ID);
+            modelBuilder.Entity<Deal>().
+                HasMany(e => e.Realest_Placement).
+                WithOptional(e => e.Deal).
+                HasForeignKey(e => e.Deal_ID);
 
             modelBuilder.Entity<Placement>()
                 .HasMany(e => e.Realest_Placement)

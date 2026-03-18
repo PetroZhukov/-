@@ -27,5 +27,12 @@ namespace RieltorKurs.Forms
             Close();
             Application.OpenForms[0].Visible = true;
         }
+
+        private void buttonClients_Click(object sender, EventArgs e)
+        {
+            ShowUsersForm form = new ShowUsersForm();
+            form.Show();
+            Close();
+        }
     }
 }

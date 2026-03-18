@@ -18,6 +18,7 @@ namespace RieltorKurs.Forms
         private List<Clients> ourien;
         private List<Clients> buyer_Tanant;
         private List<Placement> placementslistbox;
+        private Type_Deal typeDeal;
         public AddUpdateDealForm(Model1 model)
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace RieltorKurs.Forms
             deal = null;
             placementslistbox = new List<Placement>();
             LoadData();
+            typeDeal = Type_Deal.Add;
         }
         public AddUpdateDealForm(Model1 model, Deal deal)
         {
@@ -35,6 +37,7 @@ namespace RieltorKurs.Forms
             placementslistbox = new List<Placement>();
             LoadData();
             UpdateDataLoad();
+            typeDeal = Type_Deal.Update;
         }
 
         private void AddUpdateDealForm_Load(object sender, EventArgs e)
@@ -209,7 +212,7 @@ namespace RieltorKurs.Forms
                 return;
             }
 
-            if (deal == null)
+            if (typeDeal == Type_Deal.Add)
             {
                 deal = new Deal();
                 deal.Realtor_ID = AutorizationForm.Enter_User.ID;
@@ -221,7 +224,7 @@ namespace RieltorKurs.Forms
             deal.Comission = commisiion;
             deal.Type_Deal = (int)type_DealComboBox.SelectedValue;
 
-            if (deal == null)
+            if (typeDeal == Type_Deal.Add)
             {
                 model.Deal.Add(deal);
             }
@@ -244,7 +247,11 @@ namespace RieltorKurs.Forms
             }
             Close();
         }
-
+        enum Type_Deal
+        {
+            Add,
+            Update
+        }
 
     }
 }

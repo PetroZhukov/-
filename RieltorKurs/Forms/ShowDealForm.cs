@@ -40,10 +40,34 @@ namespace RieltorKurs.Forms
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            AddUpdateDealForm form = new AddUpdateDealForm(model, (Deal) dealBindingSource.Current);
+            AddUpdateDealForm form = new AddUpdateDealForm(model, (Deal)dealBindingSource.Current);
             form.ShowDialog();
             dealBindingSource.DataSource = model.Deal.ToList();
 
         }
-    }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (dealBindingSource.Count > 0)
+            {
+                Deal deal = (Deal)dealBindingSource.Current;
+                DialogResult result = MessageBox.Show($"Вы действительно хотитете удалить запись с Id {deal.ID}",
+                    $"Сообщение",
+                    MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+
+                    foreach (var repl in deal.Realest_Placement.Reverse())
+                    {
+                        model.Realest_Placement.Remove(repl);
+                    }
+                    model.SaveChanges();
+                    model.Deal.Remove(deal);
+                    model.SaveChanges();
+                    dealBindingSource.DataSource = model.Deal.ToList();
+                }
+            }
+            }
+        }
 }
